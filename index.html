@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">¡Nos Casamos!</p>
+            <h1 class="hero-title">Tomás & Valentina</h1>
+            <p class="hero-date">21 . Noviembre . 2026</p>
+            <div class="arrow-down"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+    </header>
+
+    <section class="countdown-section">
+        <h2>Faltan muy pocos días...</h2>
+        <div id="countdown" class="countdown-container">
+            <div class="time-box"><span id="days">00</span><p>Días</p></div>
+            <div class="time-box"><span id="hours">00</span><p>Hs</p></div>
+            <div class="time-box"><span id="minutes">00</span><p>Min</p></div>
+            <div class="time-box"><span id="seconds">00</span><p>Seg</p></div>
+        </div>
+    </section>
+	
+	<!-- SECCIÓN DE LA FRASE -->
+    <section class="phrase-section">
+        <div class="phrase-content">
+            <p class="wedding-quote">"Hoy comenzamos una nueva historia, el viaje más hermoso de nuestras vidas. Y no sería completo sin las personas que hacen nuestros días más felices."</p>
+            <span class="phrase-divider">✦</span>
+        </div>
+    </section>
+
+    <section class="details-section">
+        <div class="card">
+            <i class="fa-solid fa-church card-icon"></i>
+            <h3>Ceremonia</h3>
+            <p>La ceremonia se realizará a las 18:30 hs en la Parroquia Capilla del señor.</p>
+            <a href="https://maps.google.com" target="_blank" class="btn"><i class="fa-solid fa-location-dot"></i> Cómo llegar</a>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-champagne-glasses card-icon"></i>
+            <h3>Fiesta</h3>
+            <p>Nos encontramos en Salón Dorado a las 20 hs para celebrar toda la noche.</p>
+            <a href="https://maps.google.com" target="_blank" class="btn"><i class="fa-solid fa-location-dot"></i> Cómo llegar</a>
+        </div>
+    </section>
+
+    <section class="rsvp-section">
+        <div class="rsvp-container">
+            <h2>Confirmar Asistencia</h2>
+            <p>Por favor, confirmanos tu presencia antes del 01 de Noviembre.</p>
+            
+            <form id="rsvp-form">
+                <div class="input-group">
+                    <label for="name">Nombre y Apellido</label>
+                    <input type="text" id="name" required placeholder="Ej: María García">
+                </div>
+
+                <div class="input-group">
+                    <label for="attendance">¿Asistirás?</label>
+                    <select id="attendance" required>
+                        <option value="" disabled selected>Seleccioná una opción</option>
+                        <option value="si">¡Sí, ahí estaré!</option>
+                        <option value="no">Lamentablemente no puedo</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="diet">Restricción alimentaria (Opcional)</label>
+                    <select id="diet">
+                        <option value="ninguna">Ninguna</option>
+                        <option value="vegetariano">Vegetariano</option>
+                        <option value="vegano">Vegano</option>
+                        <option value="celiaco">Celíaco</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Enviar Confirmación</button>
+            </form>
+            <div id="form-response" class="hidden-message"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>¡Gracias por acompañarnos en este momento tan especial!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

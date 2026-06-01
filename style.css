@@ -1,0 +1,274 @@
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #fcfbfa;
+    line-height: 1.6;
+}
+
+/* PORTADA (HERO) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), 
+                url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1920') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px 0;
+}
+
+.hero-date {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.arrow-down {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    animation: bounce 2s infinite;
+}
+
+/* CUENTA REGRESIVA */
+.countdown-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f0eb;
+}
+
+.countdown-section h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 90px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.time-box span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #8d7765;
+}
+
+.time-box p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* DETALLES DEL EVENTO */
+.details-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #8d7765;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #8d7765;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6e5b4c;
+}
+
+/* FORMULARIO RSVP */
+.rsvp-section {
+    background-color: #f4f0eb;
+    padding: 80px 20px;
+}
+
+.rsvp-container {
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.rsvp-container h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.rsvp-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.hidden-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+.phrase-section {
+    padding: 60px 20px 20px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wedding-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #555; /* O el color principal de tu paleta */
+}
+
+.phrase-divider {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #aaa;
+}
